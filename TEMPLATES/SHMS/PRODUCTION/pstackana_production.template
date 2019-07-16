@@ -12,6 +12,14 @@ Beam Energy : {gpbeam:%.3f}
 1 MHz Pulses : {P.1MHz.scaler}
 Run Length   : {P.1MHz.scalerTime:%.3f} sec
 
+
+************************************
+*Calibrated Beam Positions @ Target 
+************************************
+
+pSHMS X BPM   : {p_XBPM_AVG} cm
+pSHMS Y BPM   : {p_YBPM_AVG} cm
+
 ***********
 * Beamline
 ***********
