@@ -3,7 +3,7 @@
 #******************
 
 begin epics
-
+HALLC:p
 # Beamline
 IBC3H00CRCUR4
 hac_bcm_average
