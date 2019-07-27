@@ -1,6 +1,7 @@
 #******************
 # EPICS VARIABLES *
 #******************
+block P.rb.*
 
 begin epics
 HALLC:p
