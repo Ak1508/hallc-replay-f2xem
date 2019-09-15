@@ -2,3 +2,4 @@
 #include "PARAM/SHMS/DC/CALIB/29deg_p2p7/pdc_calib_2884.param"
 #include "PARAM/SHMS/DC/CALIB/29deg_p2p7/pdc_tzero_per_wire_2884.param"
 #include "PARAM/SHMS/CAL/CALIB/29deg_p2p7/pcal_calib_2876.param"
+#include "PARAM/SHMS/BCM/CALIB/gscaler_period3.param"

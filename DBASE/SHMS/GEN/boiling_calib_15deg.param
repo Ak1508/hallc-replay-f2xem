@@ -2,3 +2,4 @@
 #include "PARAM/SHMS/DC/CALIB/15deg_boiling/pdc_calib_3102.param"
 #include "PARAM/SHMS/DC/CALIB/15deg_boiling/pdc_tzero_per_wire_3102.param"
 #include "PARAM/SHMS/CAL/CALIB/15deg_boiling/pcal_calib_3102.param"
+#include "PARAM/SHMS/BCM/CALIB/gscaler_period3.param"
