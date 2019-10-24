@@ -21,3 +21,4 @@
 #include "DEF-files/SHMS/PRODUCTION/TRIG/ptrig_histos.def"
 #include "DEF-files/SHMS/PRODUCTION/REACT/preact_histos.def"
 #include "DEF-files/SHMS/PRODUCTION/PID/ppid_histos.def"
+#include "DEF-files/SHMS/PRODUCTION/TIMING/ptiming_vars.def"

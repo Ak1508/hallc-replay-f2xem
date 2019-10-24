@@ -6,7 +6,7 @@
 #     Pulse Amp
 #--------------------------
 
-block P.hgcer.goodAdcPulseAmp
+#block P.hgcer.goodAdcPulseAmp
 
 block P.ngcer.goodAdcPulseAmp
 
@@ -27,7 +27,7 @@ block P.cal.fly.goodAdcPulseAmp
 #     AdcTdc Diff Time
 #---------------------------------
 
-block P.hgcer.goodAdcTdcDiffTime
+#block P.hgcer.goodAdcTdcDiffTime
 block P.ngcer.goodAdcTdcDiffTime
 
 block P.hod.1x.GoodNegAdcTdcDiffTime
@@ -50,7 +50,7 @@ block P.cal.fly.goodAdcTdcDiffTime
 
 block P.ngcer.adcErrorFlag
 
-block P.hgcer.adcErrorFlag
+#block P.hgcer.adcErrorFlag
 
 block P.cal.pr.negAdcErrorFlag
 block P.cal.pr.posAdcErrorFlag
