@@ -1,0 +1,66 @@
+#*********************
+# Timing Variables
+#*********************
+
+#--------------------------
+#     Pulse Amp
+#--------------------------
+
+block P.hgcer.goodAdcPulseAmp
+
+block P.ngcer.goodAdcPulseAmp
+
+block P.hod.1x.GoodNegAdcPulseAmp
+block P.hod.1x.GoodPosAdcPulseAmp
+block P.hod.1y.GoodNegAdcPulseAmp
+block P.hod.1y.GoodPosAdcPulseAmp
+block P.hod.2x.GoodNegAdcPulseAmp
+block P.hod.2x.GoodPosAdcPulseAmp
+block P.hod.2y.GoodNegAdcPulseAmp
+block P.hod.2y.GoodPosAdcPulseAmp
+
+block P.cal.pr.goodNegAdcPulseAmp
+block P.cal.pr.goodPosAdcPulseAmp
+block P.cal.fly.goodAdcPulseAmp
+
+#---------------------------------
+#     AdcTdc Diff Time
+#---------------------------------
+
+block P.hgcer.goodAdcTdcDiffTime
+block P.ngcer.goodAdcTdcDiffTime
+
+block P.hod.1x.GoodNegAdcTdcDiffTime
+block P.hod.1x.GoodPosAdcTdcDiffTime
+block P.hod.1y.GoodNegAdcTdcDiffTime
+block P.hod.1y.GoodPosAdcTdcDiffTime
+
+block P.hod.2x.GoodNegAdcTdcDiffTime
+block P.hod.2x.GoodPosAdcTdcDiffTime
+block P.hod.2y.GoodNegAdcTdcDiffTime
+block P.hod.2y.GoodPosAdcTdcDiffTime
+
+block P.cal.pr.goodNegAdcTdcDiffTime
+block P.cal.pr.goodPosAdcTdcDiffTime
+block P.cal.fly.goodAdcTdcDiffTime
+
+#------------------------------
+#       AdcError Flag
+#------------------------------
+
+block P.ngcer.adcErrorFlag
+
+block P.hgcer.adcErrorFlag
+
+block P.cal.pr.negAdcErrorFlag
+block P.cal.pr.posAdcErrorFlag
+block P.cal.fly.adcErrorFlag
+
+block P.hod.1x.negAdcErrorFlag
+block P.hod.1x.posAdcErrorFlag
+block P.hod.1y.negAdcErrorFlag
+block P.hod.1y.posAdcErrorFlag
+block P.hod.2x.negAdcErrorFlag
+block P.hod.2x.posAdcErrorFlag
+block P.hod.2y.negAdcErrorFlag
+block P.hod.2y.posAdcErrorFlag
