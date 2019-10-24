@@ -1,5 +1,5 @@
 #**************************
-#* Drift Chamber Variables
+#  Drift Chamber Variables
 #**************************
 
 block P.dc.x_fp
@@ -10,3 +10,4 @@ block P.dc.residual
 block P.dc.residualExclPlane
 block P.dc.chisq
 block P.dc.ntrack
+block P.dc.InsideDipoleExit

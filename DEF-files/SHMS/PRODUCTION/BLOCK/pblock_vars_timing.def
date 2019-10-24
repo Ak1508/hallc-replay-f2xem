@@ -1,0 +1,12 @@
+#********************
+# Block Definitions *
+#********************
+
+
+block P.hgcer.*
+block P.ngcer.*
+block P.dc.*
+block P.hod.*
+block P.cal.*
+block P.gtr.*
+block P.tr.*
