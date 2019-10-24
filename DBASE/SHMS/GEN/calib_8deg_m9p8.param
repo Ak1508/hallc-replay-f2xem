@@ -1,3 +1,5 @@
 ; SHMS calibration files for 8 deg, p = -9.8 GeV, runs 3131-3163
 #include "PARAM/SHMS/DC/CALIB/8deg_m9p8/pdc_calib_3162.param"
 #include "PARAM/SHMS/DC/CALIB/8deg_m9p8/pdc_tzero_per_wire_3162.param"
+#include "PARAM/SHMS/CAL/CALIB/8deg_m9p8/pcal_calib_3151.param"
+#include "PARAM/SHMS/BCM/CALIB/gscaler_period3.param"

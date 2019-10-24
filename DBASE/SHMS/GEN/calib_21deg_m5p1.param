@@ -2,3 +2,4 @@
 #include "PARAM/SHMS/DC/CALIB/21deg_m5p1/pdc_calib_2493.param"
 #include "PARAM/SHMS/DC/CALIB/21deg_m5p1/pdc_tzero_per_wire_2493.param"
 #include "PARAM/SHMS/CAL/CALIB/21deg_m5p1/pcal_calib_2493.param"
+#include "PARAM/SHMS/BCM/CALIB/gscaler_period1_unser1.param"
