@@ -23,28 +23,46 @@ g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p5.param"
 
 1762-1802
 g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p35.param"
+;bcm period 1
 
-1803-1847
-g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p18.param"
+1803-1831
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p18.param" 
+;bcm period 2p1
+
+1832-1847
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p18_2p2.param" 
 
 1848-1860
 g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_m1p05.param"
 
-1862-1941
+1862-1863
 g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p2.param"
+;bcm period 2p2
+
+1864-1923
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p2_2p3.param"
+;bcm period 2p3
+
+1924-1941
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p2_p3.param"
+
 
 1942-1984
 g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p05.param"
 
 1985-2037
-g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p2.param"
+g_ctp_calib_filename ="DBASE/HMS/GEN/calib_59deg_p1p2_p3.param"
 
 2038-2057
 g_ctp_calib_filename = "DBASE/HMS/GEN/boiling_calib_15deg.param"
 
-2058-2096
+2058-2071
 g_ctp_calib_filename = "DBASE/HMS/GEN/boiling_calib_25deg.param"
+;bcm period 3
 
+2072-2096
+g_ctp_calib_filename = "DBASE/HMS/GEN/boiling_calib_25deg_p4.param"
+;bcm period 4
 
 
 
