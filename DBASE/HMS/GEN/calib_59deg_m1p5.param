@@ -2,3 +2,4 @@
 #include "PARAM/HMS/DC/CALIB/59deg_m1p5/hdc_calib_59150.param"
 #include "PARAM/HMS/DC/CALIB/59deg_m1p5/hdc_tzero_per_wire_59150.param"
 #include "PARAM/HMS/CAL/CALIB/59deg_m1p5/hcal_calib_m1p5.param"
+#include "PARAM/HMS/BCM/CALIB/gscaler_period1_unser1.param"
