@@ -20,3 +20,6 @@
 
 # EPICS leafs
 #include "DEF-files/HMS/PRODUCTION/EPICS/hepics_vars.def"
+
+# Timing leafs
+#include "DEF-files/HMS/PRODUCTION/TIMING/htiming_vars.def"
