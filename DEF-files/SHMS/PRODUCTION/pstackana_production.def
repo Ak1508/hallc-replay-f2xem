@@ -21,3 +21,7 @@
 
 # EPICS leafs
 #include "DEF-files/SHMS/PRODUCTION/EPICS/pepics_vars.def"
+
+# Timing Leaf
+#include "DEF-files/SHMS/PRODUCTION/TIMING/ptiming_vars.def"
+
