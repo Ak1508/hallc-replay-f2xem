@@ -1,0 +1,11 @@
+#*********************************
+# Block definition
+#********************************
+
+block P.gtr.*
+block P.hod.starttime
+block P.ngcer.*
+block P.cal.*
+block P.dc.*
+block P.hgcer.*
+block T.shms.*

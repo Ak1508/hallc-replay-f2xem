@@ -1,4 +1,5 @@
-void replay_production_shms_coin (Int_t RunNumber = 0, Int_t MaxEvent = 0, const char* ftype="timeWin_check") {
+
+void replay_production_shms_coin (Int_t RunNumber = 0, Int_t MaxEvent = 0, const char* ftype="no_calibration") {
 
   // Get RunNumber and MaxEvent if not provided.
   if(RunNumber == 0) {
@@ -27,19 +28,19 @@ void replay_production_shms_coin (Int_t RunNumber = 0, Int_t MaxEvent = 0, const
   
   // Load global parameters
   gHcParms->Define("gen_run_number", "Run Number", RunNumber);
-  gHcParms->AddString("g_ctp_database_filename", "DEUTERON_ANALYSIS/DBASE/COIN/STD/standard.database");
+  gHcParms->AddString("g_ctp_database_filename", "DBASE/COIN/STD/standard.database");
   gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), RunNumber);
   gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
-  gHcParms->Load(gHcParms->GetString("g_ctp_calib_filename"));
   gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), RunNumber);
+  gHcParms->Load(gHcParms->GetString("g_ctp_calib_filename"));
   // Load parameters for SHMS trigger configuration
-  gHcParms->Load("DEUTERON_ANALYSIS/PARAM/TRIG/tshms.param");
+  gHcParms->Load("PARAM/TRIG/tshms.param");
 
   //----------------------------------------
   //------------BCM Current Module----------
 
   ifstream pbcmFile;                                                                                
-  TString pbcmParamFile = Form("DEUTERON_ANALYSIS/PARAM/SHMS/BCM/Pbcmcurrent_%d.param",  RunNumber);   
+  TString pbcmParamFile = Form("PARAM/SHMS/BCM/Pbcmcurrent_%d.param",  RunNumber);   
   pbcmFile.open(pbcmParamFile);   
 
   //-----------------------------------------
@@ -191,16 +192,18 @@ void replay_production_shms_coin (Int_t RunNumber = 0, Int_t MaxEvent = 0, const
 
 
  // Define DEF-file
-  TString DefTreeFile=Form("DEUTERON_ANALYSIS/DEF-files/SHMS/%s.def",ftype); 
+  //TString DefTreeFile=Form("DEF-files/SHMS/%s.def",ftype); 
+  TString DefTreeFile="DEF-files/COIN/heep_single.def"; 
+  //TString DefTreeFile="DEF-files/SHMS/PRODUCTION/pstackana_production.def"; 
   analyzer->SetOdefFile(DefTreeFile);
   
   // Define cuts file
-  DefTreeFile="DEUTERON_ANALYSIS/DEF-files/SHMS/CUTS/pstackana_production_cuts.def"; 
+  DefTreeFile="DEF-files/SHMS/PRODUCTION/CUTS/pstackana_production_cuts.def"; 
   analyzer->SetCutFile(DefTreeFile);  // optional
   // File to record accounting information for cuts
  
 
-  analyzer->SetSummaryFile(Form("REPORT_OUTPUT/SHMS/PRODUCTION/summary_%s_%d_%d.report", ftype,  RunNumber, MaxEvent));  // optional
+  //analyzer->SetSummaryFile(Form("REPORT_OUTPUT/SHMS/PRODUCTION/summary_%s_%d_%d.report", ftype,  RunNumber, MaxEvent));  // optional
   // Start the actual analysis.
   
 
@@ -212,20 +215,20 @@ void replay_production_shms_coin (Int_t RunNumber = 0, Int_t MaxEvent = 0, const
 
  // Create report file from template.
  //Determine which template file to use based on ftype user input
- TString temp_file;
+ // TString temp_file;
  
- if(strcmp(ftype,"scaler") == 0)
-   { 
-     temp_file = "pscalers.template";
-   }
- else
-   {
-     temp_file="pstackana_production.template";
-   }
+ // if(strcmp(ftype,"scaler") == 0)
+ //   { 
+ //     temp_file = "pscalers.template";
+ //   }
+ // else
+ //   {
+ //     temp_file="pstackana_production.template";
+ //   }
 
-  // Create report file from template
-  analyzer->PrintReport("DEUTERON_ANALYSIS/TEMPLATES/SHMS/"+temp_file,
-  			Form("REPORT_OUTPUT/SHMS/PRODUCTION/replay_shms_coin_%s_%d_%d.report", ftype, RunNumber, MaxEvent));  // optional
+ //  // Create report file from template
+ //  analyzer->PrintReport("TEMPLATES/SHMS/"+temp_file,
+ //  			Form("REPORT_OUTPUT/SHMS/PRODUCTION/replay_shms_coin_%s_%d_%d.report", ftype, RunNumber, MaxEvent));  // optional
   
 
 }

@@ -3,5 +3,8 @@ g_ctp_parm_filename ="DBASE/COIN/GEN/general.param"
 g_ctp_kinematics_filename ="DBASE/COIN/STD/standard.kinematics"
 g_ctp_calib_filename ="DBASE/COIN/GEN/default_det_calib_files.param"
 
+6611
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_33deg_m2p6.param"
 
-
+6623
+g_ctp_calib_filename = "DBASE/SHMS/GEN/calib_21deg_m2p7.param"
